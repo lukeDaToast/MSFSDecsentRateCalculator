@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Descent Speed Calculator</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>
+    Descent Speed Calculator
+  </h1>
+  
+  <label for="MachNumber">Mach Number:</label>
+  <input type="number" id="MachNumber" name="MachNumber"
+  placeholder="0.81">
+  <br>
+
+  <label for="tempDist">Distance to the next waypoint before the required altitude in your FMS</label>
+  <input type="number" id="tempDist" name="tempDist"
+  placeholder="46">
+  
+  <input type="submit" value="Add to Distance" onclick="getDist()">
+  <script src="main.js"></script>
+  <h4>
+    Current Distance:
+  </h4>
+
+  <label for="StartAlt">Starting Altitude:</label>
+  <input type="number" id="StartAlt" name="StartAlt"
+  placeholder="36000">
+  <br>
+  
+  <label for="EndAlt">Required Altitude:</label>
+  <input type="number" id="EndAlt" name="EndAlt"
+  placeholder="12000">
+  
+  <br>
+  <br>
+  
+<br>
+<br>
+
+  <br>
+  <input type="submit" value="Submit" onclick="main()">
+  <script src="main.js"></script>
+  
+  <br>
+  <br>
+
+  <h2>
+    The feet per minute is: 
+  </h2>
+</body>
+</html>
